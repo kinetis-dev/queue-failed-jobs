@@ -10,16 +10,16 @@
     ],
     "require": {
         "php": "^8.4",
-        "kinetis/framework": "dev-main",
-        "kinetis/queue": "dev-main",
-        "kinetis/persistence": "dev-main",
-        "kinetis/database-bridge": "dev-main",
+        "kinetis/framework": "^1.27.0",
+        "kinetis/queue": "^1.10.0",
+        "kinetis/persistence": "^1.4.6",
+        "kinetis/database-bridge": "^1.4.4",
         "psr/container": "^2.0.2"
     },
     "require-dev": {
         "infection/infection": "^0.35.0",
-        "kinetis/migrations": "dev-main",
-        "kinetis/queue-sql": "dev-main",
+        "kinetis/migrations": "^1.5.0",
+        "kinetis/queue-sql": "^1.6.10",
         "phpstan/phpstan": "^2.2.8",
         "phpunit/phpunit": "^13.3.3",
         "vimeo/psalm": "^7.0"
@@ -40,32 +40,6 @@
             "bootstrap": "Kinetis\\QueueFailedJobs\\PackageBootstrap"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../queue-sql"
-        },
-        {
-            "type": "path",
-            "url": "../migrations"
-        },
-        {
-            "type": "path",
-            "url": "../framework"
-        },
-        {
-            "type": "path",
-            "url": "../queue"
-        },
-        {
-            "type": "path",
-            "url": "../persistence"
-        },
-        {
-            "type": "path",
-            "url": "../database-bridge"
-        }
-    ],
     "config": {
         "sort-packages": true,
         "allow-plugins": {
